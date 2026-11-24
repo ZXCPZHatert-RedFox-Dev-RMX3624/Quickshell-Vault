@@ -12,6 +12,8 @@ mkdir -p ~/forks ~/.config/quickshell ~/.local/bin
 [ ! -d "$HOME/forks/scottbass3-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/shell-1.git" "$HOME/forks/scottbass3-dev"
 [ ! -d "$HOME/forks/serpantinum-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/serpantinum.git" "$HOME/forks/serpantinum-dev"
 [ ! -d "$HOME/forks/hi-shell-dev" ] && git clone "https://github.com/imu-useful/hi-shell.git" "$HOME/forks/hi-shell-dev"
+[ ! -d "$HOME/forks/lucid-dev" ] && git clone "https://github.com/Sn3akyy1/lucid.git" "$HOME/forks/lucid-dev"
+[ ! -d "$HOME/forks/bms-shell-dev" ] && git clone "https://github.com/Heroblaze2310/bms-shell.git" "$HOME/forks/bms-shell-dev"
 
 ln -sfn ~/forks/end4-pC-dev ~/.config/quickshell/default
 ln -sfn ~/forks/end4-pC-dev ~/.config/quickshell/end4-pC
@@ -20,6 +22,8 @@ ln -sfn ~/forks/dark-shadow-dev ~/.config/quickshell/dark-shadow
 ln -sfn ~/forks/dark-shadow-dev/quickshell/rice-settings ~/.config/quickshell/rice-settings
 ln -sfn ~/forks/dux-shell-dev ~/.config/quickshell/dms
 ln -sfn ~/forks/hi-shell-dev ~/.config/quickshell/hi-shell
+ln -sfn ~/forks/lucid-dev ~/.config/quickshell/lucid
+ln -sfn ~/forks/bms-shell-dev ~/.config/quickshell/bms
 ln -sfn ~/forks/ii-dev/dots/.config/quickshell/ii ~/.config/quickshell/ii
 ln -sfn ~/forks/ii-vynx-dev/dots/.config/quickshell/ii ~/.config/quickshell/ii-vynx
 ln -sfn ~/forks/nebula-dev ~/.config/quickshell/nebula
@@ -27,4 +31,4 @@ ln -sfn ~/forks/scottbass3-dev ~/.config/quickshell/scottbass3
 ln -sfn ~/forks/serpantinum-dev/src/quickshell ~/.config/quickshell/serpantium
 ln -sfn ~/forks/serpantinum-dev/bin/serpantinum ~/.local/bin/serpantinum
 ln -sfn ~/forks/serpantinum-dev/bin/serpantinumd ~/.local/bin/serpantinumd
-echo "Готово! Все 10 оболочек и симлинки Quickshell восстановлены."
+echo "Готово! Все 12 оболочек и симлинки Quickshell восстановлены."
