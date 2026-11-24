@@ -31,6 +31,7 @@ fi
 
 if [ -n "$SELECTED" ]; then
     "$FORKS_DIR/serpantinum-dev/bin/serpantinumd" stop 2>/dev/null
+    pkill -x dms 2>/dev/null
     pkill -x qs 2>/dev/null
     pkill -x quickshell 2>/dev/null
     sleep 0.3
@@ -39,6 +40,8 @@ if [ -n "$SELECTED" ]; then
 
     if [ "$SELECTED" = "serpantinum" ]; then
         setsid -f "$FORKS_DIR/serpantinum-dev/bin/serpantinumd" start >/tmp/qs-switch.log 2>&1
+    elif [ "$SELECTED" = "dms" ]; then
+        setsid -f dms run >/tmp/qs-switch.log 2>&1
     else
         setsid -f qs -c "$SELECTED" >/tmp/qs-switch.log 2>&1
     fi
