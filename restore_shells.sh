@@ -2,22 +2,16 @@
 set -e
 mkdir -p ~/forks ~/.config/quickshell ~/.local/bin
 
-declare -A REPOS=(
-  ["caelestia-dev"]="https://github.com"
-  ["end4-pC-dev"]="https://github.com"
-  ["dark-shadow-dev"]="https://github.com"
-  ["dux-shell-dev"]="https://github.com"
-  ["ii-dev"]="https://github.com"
-  ["ii-vynx-dev"]="https://github.com"
-  ["nebula-dev"]="https://github.com"
-  ["scottbass3-dev"]="https://github.com"
-  ["serpantinum-dev"]="https://github.com"
-  ["hi-shell-dev"]="https://github.com"
-)
-
-for dir in "${!REPOS[@]}"; do
-  [ ! -d "$HOME/forks/$dir" ] && git clone "${REPOS[$dir]}" "$HOME/forks/$dir"
-done
+[ ! -d "$HOME/forks/caelestia-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/shell.git" "$HOME/forks/caelestia-dev"
+[ ! -d "$HOME/forks/end4-pC-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/end4-pC.git" "$HOME/forks/end4-pC-dev"
+[ ! -d "$HOME/forks/dark-shadow-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/DarkShadowShell.git" "$HOME/forks/dark-shadow-dev"
+[ ! -d "$HOME/forks/dux-shell-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/dux-shell.git" "$HOME/forks/dux-shell-dev"
+[ ! -d "$HOME/forks/ii-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/dots-hyprland.git" "$HOME/forks/ii-dev"
+[ ! -d "$HOME/forks/ii-vynx-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/ii-vynx.git" "$HOME/forks/ii-vynx-dev"
+[ ! -d "$HOME/forks/nebula-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/Nebula.git" "$HOME/forks/nebula-dev"
+[ ! -d "$HOME/forks/scottbass3-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/shell-1.git" "$HOME/forks/scottbass3-dev"
+[ ! -d "$HOME/forks/serpantinum-dev" ] && git clone "https://github.com/ZXCPZHatert-RedFox-Dev-RMX3624/serpantinum.git" "$HOME/forks/serpantinum-dev"
+[ ! -d "$HOME/forks/hi-shell-dev" ] && git clone "https://github.com/imu-useful/hi-shell.git" "$HOME/forks/hi-shell-dev"
 
 ln -sfn ~/forks/end4-pC-dev ~/.config/quickshell/default
 ln -sfn ~/forks/end4-pC-dev ~/.config/quickshell/end4-pC
@@ -33,5 +27,4 @@ ln -sfn ~/forks/scottbass3-dev ~/.config/quickshell/scottbass3
 ln -sfn ~/forks/serpantinum-dev/src/quickshell ~/.config/quickshell/serpantium
 ln -sfn ~/forks/serpantinum-dev/bin/serpantinum ~/.local/bin/serpantinum
 ln -sfn ~/forks/serpantinum-dev/bin/serpantinumd ~/.local/bin/serpantinumd
-
 echo "Готово! Все 10 оболочек и симлинки Quickshell восстановлены."
