@@ -382,7 +382,7 @@ hl.window_rule({
 
 
 -- Автозапуск активной оболочки Quickshell и переключатель (Super + Shift + Q)
-hl.exec_cmd('bash -c \'S=$(cat ~/.config/quickshell/.active_shell 2>/dev/null || echo serpantinum); if [ "$S" = "serpantinum" ]; then /home/zxcpzhatert/forks/serpantinum-dev/bin/serpantinumd start; else qs -c "$S"; fi\'')
+hl.exec_cmd("/home/zxcpzhatert/.local/bin/qs-start.sh --once")
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("/home/zxcpzhatert/.local/bin/qs-switch.sh"))
 
 -- Скриншоты (Print - область, Shift + Print - весь экран)
