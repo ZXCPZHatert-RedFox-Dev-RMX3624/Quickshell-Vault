@@ -20,9 +20,10 @@ ln -sfn ~/forks/end4-pC-dev ~/.config/quickshell/end4-pC
 ln -sfn ~/forks/caelestia-dev ~/.config/quickshell/caelestia
 ln -sfn ~/forks/dark-shadow-dev ~/.config/quickshell/dark-shadow
 ln -sfn ~/forks/dark-shadow-dev/quickshell/rice-settings ~/.config/quickshell/rice-settings
-ln -sfn ~/forks/dux-shell-dev ~/.config/quickshell/dms
+ln -sfn ~/forks/dux-shell-dev/quickshell ~/.config/quickshell/dms
 ln -sfn ~/forks/hi-shell-dev ~/.config/quickshell/hi-shell
 ln -sfn ~/forks/lucid-dev ~/.config/quickshell/lucid
+[ -f ~/forks/bms-shell-dev/BakraDEMaterialShell-1.0.3.tar.gz ] && tar -xzf ~/forks/bms-shell-dev/BakraDEMaterialShell-1.0.3.tar.gz -C ~/forks/bms-shell-dev --strip-components=1 2>/dev/null || true
 ln -sfn ~/forks/bms-shell-dev ~/.config/quickshell/bms
 ln -sfn ~/forks/ii-dev/dots/.config/quickshell/ii ~/.config/quickshell/ii
 ln -sfn ~/forks/ii-vynx-dev/dots/.config/quickshell/ii ~/.config/quickshell/ii-vynx
